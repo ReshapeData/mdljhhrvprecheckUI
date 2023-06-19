@@ -1,0 +1,13 @@
+{
+    "path" : "~/app/hulilei/jhhrvprecheck/mdljhhrvprecheckUI",
+    "sortOrder" : [
+        {
+            "ascending" : false,
+            "columnIndex" : 4
+        },
+        {
+            "ascending" : false,
+            "columnIndex" : 2
+        }
+    ]
+}
