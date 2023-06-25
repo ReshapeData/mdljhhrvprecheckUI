@@ -40,8 +40,8 @@ buttonstdUI_left <- function() {
   
   res <- tagList(
     
-    shiny::actionButton(inputId = 'btn_view_salarystd' , label = '工资异常检查'),
-    shiny::actionButton(inputId = 'btn_view_socialsecuritystd' , label = '社保公积金异常检查'),
+    shiny::actionButton(inputId = 'btn_hrv_precheck_view_salarystd' , label = '工资异常检查'),
+    shiny::actionButton(inputId = 'btn_hrv_precheck_view_socialsecuritystd' , label = '社保公积金异常检查'),
 
 
     
@@ -66,8 +66,8 @@ buttonstdUI_right <- function() {
   res <- tagList(
     
 
-    shiny::actionButton(inputId = 'btn_update_salarystd' , label = '工资异常处理'),
-    shiny::actionButton(inputId = 'btn_update_socialsecuritystd' , label = '社保公积金处理')
+    shiny::actionButton(inputId = 'btn_hrv_precheck_update_salarystd' , label = '工资异常处理'),
+    shiny::actionButton(inputId = 'btn_hrv_precheck_update_socialsecuritystd' , label = '社保公积金处理')
     
     
     
@@ -90,7 +90,7 @@ buttonstdUI_right <- function() {
 buttonstdUI_bottom <- function() {
   res <- tagList(
     
-    tsui::uiScrollX(tsui::mdl_dataTable(id = 'view_data_std', label = '预览'))
+    tsui::uiScrollX(tsui::mdl_dataTable(id = 'hrv_precheck_view_data_std', label = '预览'))
     
   )
   return(res)

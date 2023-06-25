@@ -43,9 +43,9 @@ jhhrvodsUI <- function(tabTitle = 'ODS层',
 #' buttonUI_left()
 buttonodsUI_left <- function() {
   res <- tagList(
-    shiny::actionButton(inputId = 'btn_view_salaryods' , label = '工资异常检查'),
-    shiny::actionButton(inputId = 'btn_view_socialsecurityods' , label = '社保公积金异常检查'),
-    shiny::actionButton(inputId = 'btn_view_rulevoucherods' , label = '凭证规则表异常检验')
+    shiny::actionButton(inputId = 'btn_hrv_precheck_view_salaryods' , label = '工资异常检查'),
+    shiny::actionButton(inputId = 'btn_hrv_precheck_view_socialsecurityods' , label = '社保公积金异常检查'),
+    shiny::actionButton(inputId = 'btn_hrv_precheck_view_rulevoucherods' , label = '凭证规则表异常检验')
     
     
     
@@ -64,9 +64,9 @@ buttonodsUI_left <- function() {
 #' buttonUI_left()
 buttonodsUI_right <- function() {
   res <- tagList(
-    shiny::actionButton(inputId = 'btn_update_salaryods' , label = '工资异常处理'),
-    shiny::actionButton(inputId = 'btn_update_socialsecurityods' , label = '社保公积金处理'),
-    shiny::actionButton(inputId = 'btn_update_rulevoucherods' , label = '凭证规则表异常处理')
+    shiny::actionButton(inputId = 'btn_hrv_precheck_update_salaryods' , label = '工资异常处理'),
+    shiny::actionButton(inputId = 'btn_hrv_precheck_update_socialsecurityods' , label = '社保公积金处理'),
+    shiny::actionButton(inputId = 'btn_hrv_precheck_update_rulevoucherods' , label = '凭证规则表异常处理')
     
     
     
@@ -85,7 +85,7 @@ buttonodsUI_right <- function() {
 #' buttonUI_right()
 buttonodsUI_bottom <- function() {
   res <- tagList(
-    tsui::uiScrollX(tsui::mdl_dataTable(id = 'view_data_ods', label = '预览'))
+    tsui::uiScrollX(tsui::mdl_dataTable(id = 'hrv_precheck_view_data_ods', label = '预览'))
 
   )
   return(res)
