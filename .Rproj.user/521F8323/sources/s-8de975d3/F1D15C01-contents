@@ -15,7 +15,5 @@ Collate:
     'button.R'
     'text.R'
     'date.R'
-    'jhhrv.R'
-    'jhhrvstdsalary.R'
     'jhhrvodscheckquery.R'
     'jhhrvstdcheckquery.R'
